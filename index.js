@@ -1,4 +1,6 @@
 const express = require('express')
+const cors = require('cors')
+
 const Pool = require('pg').Pool
 const pool = new Pool({
     user: 'postgres',
@@ -11,6 +13,7 @@ const pool = new Pool({
 const app = express()
 const port = 4000
 
+app.use(cors())
 app.use(express.json())
 
 app.get('/', (request, response) => {
