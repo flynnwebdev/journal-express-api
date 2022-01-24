@@ -12,12 +12,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^14.2.0",
     "cors": "^2.8.5",
     "express": "^4.17.2",
     "pg": "^8.7.1"
   },
   "devDependencies": {
-    "dotenv": "^14.2.0",
     "jest": "^27.4.7",
     "supertest": "^6.2.2"
   }
