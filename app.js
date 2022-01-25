@@ -1,13 +1,10 @@
 const express = require('express')
 const cors = require('cors')
+require('dotenv').config()
 
 const Pool = require('pg').Pool
 const pool = new Pool({
-    user: 'postgres',
-    password: 'postgres',
-    host: 'localhost',
-    port: 5432,
-    database: 'journal'
+    connectionString: process.env.DATABASE_URL
 })
 
 const app = express()
